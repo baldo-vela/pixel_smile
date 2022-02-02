@@ -16,6 +16,13 @@ drawDot(15, "4");
 // output what we drew to the console
 outputImage();
 
+function drawDot(
+    x: number,
+    y: number
+) {
+    
+}
+
 function drawRectangle(
   x: number,
   y: number,
