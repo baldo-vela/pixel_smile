@@ -15,12 +15,19 @@ drawDot(15, "4");
 
 // output what we drew to the console
 outputImage();
-
+/**
+ * Given the x, y coordinates of a pixel, sets the imageData array for that pixel to be true if they are within the bounds of the image
+ * @param x - horizontal position
+ * @param y - vertical position
+ * @returns nothing
+ */
 function drawDot(
     x: number,
     y: number
 ) {
-    
+    if (isPointInImage(x,y)) {
+        imageData[y * imageWidth + x] = true;
+    }
 }
 
 function drawRectangle(
