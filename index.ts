@@ -31,9 +31,12 @@ function drawDot(
 }
 function drawHorizontalLine (
     x: number,
-    y: number
+    y: number,
+    length: number
 ) {
-
+    for (let i = 0; i < length; i++) {
+        drawDot(x + i, y);
+    }
 }
 function drawRectangle(
   x: number,
