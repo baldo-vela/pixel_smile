@@ -29,7 +29,12 @@ function drawDot(
         imageData[y * imageWidth + x] = true;
     }
 }
+function drawHorizontalLine (
+    x: number,
+    y: number
+) {
 
+}
 function drawRectangle(
   x: number,
   y: number,
